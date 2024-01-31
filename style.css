@@ -1,0 +1,244 @@
+:root{
+    --primary: #FFDE00;
+    --highlight: #C6AD00;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* +++++++++++++++++++++++++RESET+++++++++++++++++++++++++++++ */
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.full-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.button-black{
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.button-yellow{
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: black;
+    border: 2px solid black;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--highlight);
+    }
+}
+
+/* ===========================GlobalClasses============================ */
+.header-message {
+    background-color: var(--primary);
+    height: 45px;
+    display: flex;
+}
+
+header>nav>img {
+    width: auto;
+    height: 25px;
+    margin-left: 80px;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: 70px;
+    border-bottom: black solid 2px;
+}
+
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.header-links>a {
+    padding: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+/* ===============================HEADER=============================== */
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-top: 60px;   
+    width: min(600px, 65vw);
+    height: 25dvh;
+}
+
+.home-text > h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.home-text > p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.home-image{
+    width: 80em;
+    height: 55dvh;
+    background-color: #AAAAAA;
+}
