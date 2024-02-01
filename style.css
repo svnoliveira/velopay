@@ -425,3 +425,25 @@ header>nav {
 }
 
 /* =============================PRODUCT========================== */
+
+#brands {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+}
+
+#brands > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 40dvh;
+}
+
+.brand-list{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+}
+
+/* ============================BRANDS=============================== */
