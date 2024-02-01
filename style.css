@@ -380,3 +380,48 @@ header>nav {
     gap: 20px;
     height: 30dvh;
 }
+
+/* ============================BANNER==================================== */
+
+#product{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: min(600px, 90%);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    >div{
+        width: 33%;
+    }
+}
+
+.product-image{
+    background-color: #AAAAAA;
+    height: 50dvh;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    > .card-info{
+        max-width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* =============================PRODUCT========================== */
