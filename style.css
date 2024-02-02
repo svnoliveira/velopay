@@ -447,3 +447,44 @@ header>nav {
 }
 
 /* ============================BRANDS=============================== */
+
+#refferal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0;
+    gap: 20px;
+}
+
+#refferal > ul{
+    display: flex;
+
+}
+
+#refferal > ul >li{
+    width: 35px;
+    height: 35px;
+}
+
+.refferal-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.refferal-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #AAAAAA;
+}
+
+.refferal-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+/* ==============================REFFERAL================================== */
+
