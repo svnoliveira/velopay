@@ -1,3 +1,5 @@
+/* +++++++++++++++++++++++++RESET+++++++++++++++++++++++++++++ */
+
 :root{
     --primary: #FFDE00;
     --highlight: #C6AD00;
@@ -109,7 +111,7 @@ section {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -143,7 +145,7 @@ table {
     border-spacing: 0;
 }
 
-/* +++++++++++++++++++++++++RESET+++++++++++++++++++++++++++++ */
+/* ===========================GlobalClasses============================ */
 
 .container {
     max-width: 1600px;
@@ -235,7 +237,8 @@ table {
     }
 }
 
-/* ===========================GlobalClasses============================ */
+/* ===============================HEADER=============================== */
+
 .header-message {
     background-color: var(--primary);
     height: 45px;
@@ -267,7 +270,8 @@ header>nav {
     color: black;
 }
 
-/* ===============================HEADER=============================== */
+/* ============================HOME================================== */
+
 #home{
     display: flex;
     flex-direction: column;
@@ -289,7 +293,7 @@ header>nav {
     background-color: #AAAAAA;
 }
 
-/* ============================HOME================================== */
+/* =====================FEATURES============================= */
 
 #features{
     margin-top: 10dvh;
@@ -332,7 +336,7 @@ header>nav {
     }
 }
 
-/* =====================FEATURES============================= */
+/* ==========================FEATURE2=============================== */
 
 #features2 > .container{
     display: flex;
@@ -369,7 +373,7 @@ header>nav {
     background-color: #AAAAAA;
 }
 
-/* ==========================FEATURE2=============================== */
+/* ============================BANNER==================================== */
 
 #banner{
     margin-top: 80px;
@@ -381,7 +385,7 @@ header>nav {
     height: 30dvh;
 }
 
-/* ============================BANNER==================================== */
+/* =============================PRODUCT========================== */
 
 #product{
     display: flex;
@@ -424,7 +428,7 @@ header>nav {
     }
 }
 
-/* =============================PRODUCT========================== */
+/* ============================BRANDS=============================== */
 
 #brands {
     background-color: black;
@@ -446,7 +450,7 @@ header>nav {
     justify-items: center;
 }
 
-/* ============================BRANDS=============================== */
+/* ==============================REFFERAL================================== */
 
 #refferal{
     display: flex;
@@ -486,5 +490,81 @@ header>nav {
     text-align: left;
 }
 
-/* ==============================REFFERAL================================== */
+/* #==============================CONTACT===================================== */
 
+#contact{
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 80px 0;
+}
+
+#contact > .container{
+    display: flex;
+    height: 60dvh;
+    width: 100%;
+    >div {
+        min-width: 50%;
+    }
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+.contact-text > .button-yellow{
+    max-width: fit-content;
+}
+
+.contact-icon > img{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    width: 35%;
+}
+
+/* ===============================FOOTER========================== */
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo >img{
+    height: 70px;
+}
+
+.footer-subscribe{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

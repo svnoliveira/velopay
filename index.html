@@ -19,7 +19,7 @@
             <span>A MENOR TAXA COM RECEBIMENTO EM APENAS UM DIA ÚTIL!</span>
         </div>
         <nav class="container">
-            <img src="./assets/logo.jpg" alt="Logo da velopay">
+            <img src="./assets/logo-black.png" alt="Logo da velopay">
             <div class="header-links">
                 <a class="txt-button" href="">Maquininhas</a>
                 <a class="txt-button" href="">Serviços</a>
@@ -239,58 +239,72 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <span>Simples</span>
-                <h1>Informações de Contato</h1>
-                <p>Preencha o formulário abaixo para ficar em contato conosco</p>
-                <div>
-                    <label for="">Nome</label>
-                    <input type="text">
+        <section id="contact">
+            <div class="container">
+                <div class="contact-text">
+                    <span class="txt-tag">Contato</span>
+                    <h1 class="txt-title">Informações de Contato</h1>
+                    <p class="txt-paragraph">Preencha o formulário abaixo para ficar em contato conosco</p>
+                    <div class="contact-input">
+                        <label class="txt-tag" for="">Nome</label>
+                        <input class="txt-paragraph" type="text">
+                    </div>
+                    <div class="contact-input">
+                        <label class="txt-tag" for="">Email</label>
+                        <input class="txt-paragraph" type="email">
+                    </div>
+                    <div class="contact-input">
+                        <label class="txt-tag" for="">Mensagem</label>
+                        <textarea class="txt-paragraph" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="button-yellow" >Enviar</button>
                 </div>
-                <div>
-                    <label for="">Email</label>
-                    <input type="email">
-                </div>
-                <label for="">Mensagem</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-            </div>
-            <div>
-                <div>
-                    <!-- <img src="" alt=""> -->
-                    <h2>Email</h2>
-                    <p>Mande um email</p>
-                    <p>email@email.com</p>
-                </div>
-                <div>
-                    <!-- <img src="" alt=""> -->
-                    <h2>Whatsapp</h2>
-                    <p>Entre em contato pelo whatsapp</p>
-                    <p>(11) 9 9999-9999</p>
-                </div>
-                <div>
-                    <!-- <img src="" alt=""> -->
-                    <h2>Escritório</h2>
-                    <p>Avenida Brasil - 123</p>
-                    <p>São Paulo SP</p>
+                <div class="contact-info full-center">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="./assets/icons/email.svg" alt="">
+                        </div>
+                        <h2 class="txt-bold">Email</h2>
+                        <p class="txt-paragraph">Mande um email</p>
+                        <p class="txt-tag">email@email.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="./assets/icons/whatsapp.svg" alt="">
+                        </div>
+                        <h2 class="txt-bold">Whatsapp</h2>
+                        <p class="txt-paragraph">Entre em contato pelo whatsapp</p>
+                        <p class="txt-tag">(11) 9 9999-9999</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="./assets/icons/house.svg" alt="">
+                        </div>
+                        <h2 class="txt-bold">Escritório</h2>
+                        <p class="txt-paragraph">Avenida Brasil - 123</p>
+                        <p class="txt-tag">São Paulo SP</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="./assets/logo.jpg" alt="ícone da velopay">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <!-- <img src="" alt=""> -->
+    <footer class="full-center">
+        <div class="footer-text container">
+            <div class="footer-logo">
+                <img src="./assets/logo-black.png" alt="íconde da empresa Velopay">
             </div>
-            <div>
-                <p>Se inscreva</p>
-                <input type="email">
-                <button>Inscrever-se</button>
+            <div class="footer-subscribe">
+                <p class="txt-bold">Se inscreva</p>
+                <input class="txt-paragraph" type="email">
+                <button class="button-black">Inscrever-se</button>
             </div>
         </div>
         <div>
             <span>2024 todos direitos reservados</span>
+            <div></div>
         </div>
     </footer>
 </body>
