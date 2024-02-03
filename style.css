@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
 /* +++++++++++++++++++++++++RESET+++++++++++++++++++++++++++++ */
 
 :root{
@@ -222,6 +224,11 @@ table {
     text-decoration: underline;
 }
 
+.txt-info{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .txt-bold{
     font-size: 16px;
     font-weight: 600;
@@ -411,9 +418,9 @@ header>nav {
     }
 }
 
-.product-image{
-    background-color: #AAAAAA;
+.product-image >img{
     height: 50dvh;
+    object-fit: contain;
 }
 
 .product-card{
@@ -428,7 +435,170 @@ header>nav {
     }
 }
 
-/* ============================BRANDS=============================== */
+/* ============================detailedCard======================== */
+
+.product-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 55px;
+}
+
+  .card {
+  font-family: "Istok Web", sans-serif;
+  position: relative;
+  width: 320px;
+  height: 650px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "VELOPAY";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: -25px;
+  opacity: 1;
+}
+
+.contentBox > .txt-tag{
+    color: #AAAAAA;
+    margin-bottom: 10px;
+}
+
+.card-ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-li-yes,
+.card-li-no{
+    position: relative;
+    padding-left: 35px;
+}
+
+.card-li-no{
+    text-decoration: line-through;
+}
+
+.card-li-yes::before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 6px;
+	width: 1em;
+	height: 1em;
+	background-repeat: no-repeat;
+	background-image: url("./assets/icons/yes.svg")
+}
+
+.card-li-no::before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 6px;
+	width: 1em;
+	height: 1em;
+	background-repeat: no-repeat;
+	background-image: url("./assets/icons/no.svg")
+}
+
+.mini {
+  height: 300px;
+  width: auto;
+}
+
+
+/* ============================BRANDS============================== */
 
 #brands {
     background-color: black;
