@@ -720,7 +720,8 @@ header>nav {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #AAAAAA;
+    overflow: hidden;
+    border: solid 2px var(--primary);
 }
 
 .refferal-text {
