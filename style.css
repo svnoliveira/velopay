@@ -745,7 +745,7 @@ header>nav {
     height: 60dvh;
     width: 100%;
 
-    >div {
+    >form {
         min-width: 50%;
     }
 }
