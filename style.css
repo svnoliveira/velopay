@@ -748,6 +748,9 @@ header>nav {
     >form {
         min-width: 50%;
     }
+    >div{
+        min-width: 50%;
+    }
 }
 
 .contact-text {
