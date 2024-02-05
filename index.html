@@ -16,6 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <script src="./carrousel.js" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +46,7 @@
         </div>
       </div>
       <div class="home-image">
-        <!-- <img src="" alt=""> -->
+        <img src="./assets/hero/shopping.png" alt="Foto de pessoas comprando em uma loja">
       </div>
     </section>
     <section id="features">
@@ -83,7 +84,7 @@
           </div>
         </div>
         <div class="features-image">
-          <!-- <img src="" alt=""> -->
+          <img src="./assets/hero/smilegirl.png" alt="foto de uma garota sorrindo">
         </div>
       </div>
     </section>
@@ -126,16 +127,34 @@
           </div>
         </div>
         <div class="features2-image">
-          <!-- <img src="" alt=""> -->
+          <img src="./assets/hero/collage.png" alt="Colagem de várias fotos de compras">
         </div>
       </div>
     </section>
     <section id="banner" class="full-center">
-      <h1 class="txt-title">Descubra As Opções Da Nossa Maquininha</h1>
-      <p class="txt-paragraph">Garanta a sua e aceite várias formas de pagamento</p>
-      <div>
-        <button class="button-black">Saiba Mais</button>
-        <a href="#contact"><button class="button-white">Entre em contato</button></a>
+      <div class="banner-text">
+        <h1 class="txt-title">Confira as taxas da Velopay</h1>
+        <div>
+          <button id="dia" class="txt-button selected">1 Dia Útil</button>
+          <button id="nahora" class="txt-button">Na Hora</button>
+        </div>
+        
+      </div>
+      <div class="banner-container full-center">
+        <ul class="banner-taxa">
+          <li>
+            <span class="txt-bold">DÉBITO</span>
+            <span class="txt-number">1.39%</span>
+          </li>
+          <li>
+            <span class="txt-bold">CRÉDITO</span>
+            <span id="credito" class="txt-number">2.96%</span>
+          </li>
+          <li>
+            <span class="txt-bold">CRÉDITO EM 12X</span>
+            <span id="parcelado" class="txt-number">9.97%</span>
+          </li>
+        </ul>
       </div>
     </section>
     <section id="product" class="container full-center">
