@@ -27,3 +27,12 @@ const togglePriceButton = () => {
 
 togglePriceButton()
 
+const toggleDropdownMenu = () => {
+    const menuButton = document.getElementById("menu-button");
+    const dropdownContent = document.getElementsByClassName("dropdown-content")[0];
+    menuButton.addEventListener("click", function() {
+    dropdownContent.classList.toggle("show");
+    });
+}
+
+toggleDropdownMenu();
